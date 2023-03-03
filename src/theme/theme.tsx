@@ -1,6 +1,20 @@
 import tokens from './tokens.json';
 import { createTheme } from '@shopify/restyle';
 
+type fontWeight =
+	| '400'
+	| 'bold'
+	| '700'
+	| '500'
+	| 'normal'
+	| '100'
+	| '200'
+	| '300'
+	| '600'
+	| '800'
+	| '900'
+	| undefined;
+
 const theme = createTheme({
 	colors: {
 		inkBase: tokens.FigmaColors.inkBase,
@@ -46,61 +60,63 @@ const theme = createTheme({
 	textVariants: {
 		defaultRegularFileMetadata: {
 			fontFamily: tokens.FigmaTexts.defaultRegularFileMetadata.fontFamily,
-			fontWeight: tokens.FigmaTexts.defaultRegularFileMetadata.fontWeight,
+			fontWeight: tokens.FigmaTexts.defaultRegularFileMetadata
+				.fontWeight as fontWeight as fontWeight,
 			fontSize: tokens.FigmaTexts.defaultRegularFileMetadata.fontSize
 		},
 		typographyBoldTextTitle3: {
 			fontFamily: tokens.FigmaTexts.typographyBoldTextTitle3.fontFamily,
-			fontWeight: tokens.FigmaTexts.typographyBoldTextTitle3.fontWeight,
+			fontWeight: tokens.FigmaTexts.typographyBoldTextTitle3
+				.fontWeight as fontWeight,
 			fontSize: tokens.FigmaTexts.typographyBoldTextTitle3.fontSize
 		},
 		titleTitleX: {
 			fontFamily: tokens.FigmaTexts.titleTitleX.fontFamily,
-			fontWeight: tokens.FigmaTexts.titleTitleX.fontWeight,
+			fontWeight: tokens.FigmaTexts.titleTitleX.fontWeight as fontWeight,
 			fontSize: tokens.FigmaTexts.titleTitleX.fontSize,
 			lineHeight: tokens.FigmaTexts.titleTitleX.lineHeight
 		},
 		titleTitle1: {
 			fontFamily: tokens.FigmaTexts.titleTitle1.fontFamily,
-			fontWeight: tokens.FigmaTexts.titleTitle1.fontWeight,
+			fontWeight: tokens.FigmaTexts.titleTitle1.fontWeight as fontWeight,
 			fontSize: tokens.FigmaTexts.titleTitle1.fontSize,
 			lineHeight: tokens.FigmaTexts.titleTitle1.lineHeight
 		},
 		titleTitle2: {
 			fontFamily: tokens.FigmaTexts.titleTitle2.fontFamily,
-			fontWeight: tokens.FigmaTexts.titleTitle2.fontWeight,
+			fontWeight: tokens.FigmaTexts.titleTitle2.fontWeight as fontWeight,
 			fontSize: tokens.FigmaTexts.titleTitle2.fontSize
 		},
 		titleTitle3: {
 			fontFamily: tokens.FigmaTexts.titleTitle3.fontFamily,
-			fontWeight: tokens.FigmaTexts.titleTitle3.fontWeight,
+			fontWeight: tokens.FigmaTexts.titleTitle3.fontWeight as fontWeight,
 			fontSize: tokens.FigmaTexts.titleTitle3.fontSize
 		},
 		bodyBody1: {
 			fontFamily: tokens.FigmaTexts.bodyBody1.fontFamily,
-			fontWeight: tokens.FigmaTexts.bodyBody1.fontWeight,
+			fontWeight: tokens.FigmaTexts.bodyBody1.fontWeight as fontWeight,
 			fontSize: tokens.FigmaTexts.bodyBody1.fontSize
 		},
 		bodyBody2: {
 			fontFamily: tokens.FigmaTexts.bodyBody2.fontFamily,
-			fontWeight: tokens.FigmaTexts.bodyBody2.fontWeight,
+			fontWeight: tokens.FigmaTexts.bodyBody2.fontWeight as fontWeight,
 			fontSize: tokens.FigmaTexts.bodyBody2.fontSize
 		},
 		bodyBody3: {
 			fontFamily: tokens.FigmaTexts.bodyBody3.fontFamily,
-			fontWeight: tokens.FigmaTexts.bodyBody3.fontWeight,
+			fontWeight: tokens.FigmaTexts.bodyBody3.fontWeight as fontWeight,
 			fontSize: tokens.FigmaTexts.bodyBody3.fontSize,
 			lineHeight: tokens.FigmaTexts.bodyBody3.lineHeight
 		},
 		small: {
 			fontFamily: tokens.FigmaTexts.small.fontFamily,
-			fontWeight: tokens.FigmaTexts.small.fontWeight,
+			fontWeight: tokens.FigmaTexts.small.fontWeight as fontWeight,
 			fontSize: tokens.FigmaTexts.small.fontSize,
 			lineHeight: tokens.FigmaTexts.small.lineHeight
 		},
 		tiny: {
 			fontFamily: tokens.FigmaTexts.tiny.fontFamily,
-			fontWeight: tokens.FigmaTexts.tiny.fontWeight,
+			fontWeight: tokens.FigmaTexts.tiny.fontWeight as fontWeight,
 			fontSize: tokens.FigmaTexts.tiny.fontSize,
 			lineHeight: tokens.FigmaTexts.tiny.lineHeight
 		}

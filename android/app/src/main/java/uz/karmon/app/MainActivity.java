@@ -1,4 +1,4 @@
-package com.karmon;
+package uz.karmon.app;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

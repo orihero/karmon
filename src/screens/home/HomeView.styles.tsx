@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import theme from '../../theme/theme';
 
-export const styles = StyleSheet.create({
+export const homeViewStyles = StyleSheet.create({
 	container: {
 		flex: 1
 	},
@@ -11,5 +11,8 @@ export const styles = StyleSheet.create({
 		paddingHorizontal: 16,
 		justifyContent: 'space-between'
 	},
-	month: {}
+	expenseBalance: {
+		flexDirection: 'row',
+		justifyContent: 'space-between'
+	}
 });

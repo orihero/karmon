@@ -1,4 +1,4 @@
-package com.karmon;
+package uz.karmon.app;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

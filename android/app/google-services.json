@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "585255946345",
+    "firebase_url": "https://karmon-b5d44-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "karmon-b5d44",
+    "storage_bucket": "karmon-b5d44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585255946345:android:e32bf7ad3295804a9fbaf8",
+        "android_client_info": {
+          "package_name": "uz.karmon.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585255946345-glp6ngdbbhf24gipi9563gb09amkappj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhVKtnyJ6P7BpgcsEBvmg7FBIPLxJPoTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585255946345-glp6ngdbbhf24gipi9563gb09amkappj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "585255946345-abd8rckqdc52ip9j0m4bl44h0uj15d15.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "uz.karmon.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

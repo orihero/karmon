@@ -15,8 +15,22 @@ export const dropdownStyles = StyleSheet.create({
 		marginLeft: 8
 	},
 	modalContainer: {
-		padding: 20,
 		backgroundColor: theme.colors.baseLightLight100,
-		borderRadius: 8
+		borderTopLeftRadius: 8,
+		borderTopRightRadius: 8,
+		paddingVertical: 24,
+		paddingHorizontal: 16
+	},
+	modal: {
+		justifyContent: 'flex-end',
+		margin: 0
+	},
+	modalItem: {
+		...theme.textVariants.bodyBody1,
+		margin: 8
+	},
+	modalItemContainer: {
+		flexDirection: 'row',
+		justifyContent: 'space-between'
 	}
 });
