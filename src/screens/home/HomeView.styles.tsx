@@ -14,5 +14,6 @@ export const homeViewStyles = StyleSheet.create({
 	expenseBalance: {
 		flexDirection: 'row',
 		justifyContent: 'space-between'
-	}
+	},
+	walletsContainer: {}
 });

@@ -12,6 +12,21 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		51A098C229B2145D0076B3CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51A098C129B2145D0076B3CB /* GoogleService-Info.plist */; };
+		51A098C329B224860076B3CB /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAC42CB60B344003A6B40FEB /* Inter-Black.ttf */; };
+		51A098C429B224860076B3CB /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3B08F88F7034EEFA84E0387 /* Inter-Bold.ttf */; };
+		51A098C529B224860076B3CB /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D09738470AA847C8AD570058 /* Inter-ExtraBold.ttf */; };
+		51A098C629B224860076B3CB /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A04D2584271C4E68A42CD7E9 /* Inter-ExtraLight.ttf */; };
+		51A098C729B224860076B3CB /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F61578F452A483680026AE0 /* Inter-Light.ttf */; };
+		51A098C829B224860076B3CB /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 018F2EF5691A4EBF8A806B57 /* Inter-Medium.ttf */; };
+		51A098C929B224860076B3CB /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7770EBB8F81B4884ADEE259A /* Inter-Regular.ttf */; };
+		51A098CA29B224860076B3CB /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3BC2354D284B1796F823E9 /* Inter-SemiBold.ttf */; };
+		51A098CB29B224860076B3CB /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1877D4FD5ADC43AAB837F3C4 /* Inter-Thin.ttf */; };
+		51A098CC29B224860076B3CB /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B16C8624E8B49EFB3EEEEA1 /* DMSans-Bold.ttf */; };
+		51A098CD29B224860076B3CB /* DMSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C64A42B33334D84978D8C56 /* DMSans-BoldItalic.ttf */; };
+		51A098CE29B224860076B3CB /* DMSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFEEEFC5FFFA4BDC9A470C5C /* DMSans-Italic.ttf */; };
+		51A098CF29B224860076B3CB /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B84C95297B2140028F275D6E /* DMSans-Medium.ttf */; };
+		51A098D029B224860076B3CB /* DMSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77721B3F471A4F038990CA5B /* DMSans-MediumItalic.ttf */; };
+		51A098D129B224860076B3CB /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7449D1FB1699415889B11225 /* DMSans-Regular.ttf */; };
 		5D2346427DEB19A4FBB72633 /* Pods_karmon_karmonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1375FFD281814D7CF7687451 /* Pods_karmon_karmonTests.framework */; };
 		68E2BBDA5459E63739D0C46C /* Pods_karmon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBACBAE573EADFEC67CEF16C /* Pods_karmon.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -284,6 +299,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A098C329B224860076B3CB /* Inter-Black.ttf in Resources */,
+				51A098C429B224860076B3CB /* Inter-Bold.ttf in Resources */,
+				51A098C529B224860076B3CB /* Inter-ExtraBold.ttf in Resources */,
+				51A098C629B224860076B3CB /* Inter-ExtraLight.ttf in Resources */,
+				51A098C729B224860076B3CB /* Inter-Light.ttf in Resources */,
+				51A098C829B224860076B3CB /* Inter-Medium.ttf in Resources */,
+				51A098C929B224860076B3CB /* Inter-Regular.ttf in Resources */,
+				51A098CA29B224860076B3CB /* Inter-SemiBold.ttf in Resources */,
+				51A098CB29B224860076B3CB /* Inter-Thin.ttf in Resources */,
+				51A098CC29B224860076B3CB /* DMSans-Bold.ttf in Resources */,
+				51A098CD29B224860076B3CB /* DMSans-BoldItalic.ttf in Resources */,
+				51A098CE29B224860076B3CB /* DMSans-Italic.ttf in Resources */,
+				51A098CF29B224860076B3CB /* DMSans-Medium.ttf in Resources */,
+				51A098D029B224860076B3CB /* DMSans-MediumItalic.ttf in Resources */,
+				51A098D129B224860076B3CB /* DMSans-Regular.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				51A098C229B2145D0076B3CB /* GoogleService-Info.plist in Resources */,

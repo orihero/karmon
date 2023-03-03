@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TouchableOpacity, View } from 'react-native';
+import { GestureResponderEvent, TouchableOpacity, View } from 'react-native';
 import Modal from 'react-native-modal';
 import { ArrowDown } from '../../assets/icons/arrow-down';
 import { ArrowRight } from '../../assets/icons/arrow-right';
@@ -17,7 +17,7 @@ export interface DropdownProps {
 	value?: DropdownItemProps;
 }
 
-const Dropdown = ({ items, value }: DropdownProps) => {
+const Dropdown = ({ items, value, onValueChange }: DropdownProps) => {
 	const [modalVisible, setModalVisible] = useState(false);
 
 	const openModal = () => {
@@ -28,6 +28,10 @@ const Dropdown = ({ items, value }: DropdownProps) => {
 		setModalVisible(false);
 	};
 
+	const onItemPress = (item: DropdownItemProps) => () => {
+		onValueChange && onValueChange(item);
+		closeModal();
+	};
 	return (
 		<>
 			<TouchableOpacity
@@ -35,7 +39,7 @@ const Dropdown = ({ items, value }: DropdownProps) => {
 				style={dropdownStyles.container}
 			>
 				<ArrowDown />
-				<Text style={dropdownStyles.text}>{value?.value}</Text>
+				<Text style={dropdownStyles.text}>{value?.label}</Text>
 			</TouchableOpacity>
 			<Modal
 				onBackButtonPress={closeModal}
@@ -47,7 +51,8 @@ const Dropdown = ({ items, value }: DropdownProps) => {
 				<View style={dropdownStyles.modalContainer}>
 					{items?.map((e) => {
 						return (
-							<View
+							<TouchableOpacity
+								onPress={onItemPress(e)}
 								key={e.value}
 								style={dropdownStyles.modalItemContainer}
 							>
@@ -55,7 +60,7 @@ const Dropdown = ({ items, value }: DropdownProps) => {
 									{e.label}
 								</Text>
 								<ArrowRight />
-							</View>
+							</TouchableOpacity>
 						);
 					})}
 				</View>

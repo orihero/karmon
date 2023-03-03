@@ -12,7 +12,9 @@ export const dropdownStyles = StyleSheet.create({
 		alignItems: 'center'
 	},
 	text: {
-		marginLeft: 8
+		marginLeft: 8,
+		...theme.textVariants.bodyBody3,
+		color: theme.colors.baseDarkDark50
 	},
 	modalContainer: {
 		backgroundColor: theme.colors.baseLightLight100,
