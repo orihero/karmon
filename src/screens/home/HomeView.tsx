@@ -26,6 +26,7 @@ export const HomeView = () => {
 					items={months}
 					onValueChange={onMonthChange}
 					value={selectedMonth}
+					reversedIcon
 				/>
 				<Notification />
 			</View>

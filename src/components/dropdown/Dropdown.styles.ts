@@ -6,13 +6,20 @@ export const dropdownStyles = StyleSheet.create({
 		borderRadius: 40,
 		borderWidth: 1,
 		borderColor: theme.colors.baseLightLight60,
-		padding: 10,
+		padding: 16,
 		paddingHorizontal: 16,
 		flexDirection: 'row',
-		alignItems: 'center'
+		alignItems: 'center',
+		justifyContent: 'space-between',
+		marginVertical: 8
+	},
+	placeholder: {
+		color: theme.colors.baseLightLight20,
+		...theme.textVariants.bodyBody3,
+		marginHorizontal: 8
 	},
 	text: {
-		marginLeft: 8,
+		marginHorizontal: 8,
 		...theme.textVariants.bodyBody3,
 		color: theme.colors.baseDarkDark50
 	},
@@ -34,5 +41,9 @@ export const dropdownStyles = StyleSheet.create({
 	modalItemContainer: {
 		flexDirection: 'row',
 		justifyContent: 'space-between'
+	},
+	defaultContainer: {
+		borderRadius: 16,
+		height: 56
 	}
 });

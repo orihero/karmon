@@ -5,7 +5,9 @@ export const backNavigationStyles = StyleSheet.create({
 	container: {
 		flexDirection: 'row',
 		justifyContent: 'space-between',
-		paddingHorizontal: 20
+		paddingHorizontal: 20,
+		paddingVertical: 20,
+		alignItems: 'center'
 	},
 	title: {
 		...theme.textVariants.titleTitle3,

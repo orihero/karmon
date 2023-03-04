@@ -15,9 +15,17 @@ export interface DropdownProps {
 	items?: DropdownItemProps[];
 	onValueChange?: (item: DropdownItemProps) => void;
 	value?: DropdownItemProps;
+	reversedIcon?: boolean;
+	placeholder?: string;
 }
 
-const Dropdown = ({ items, value, onValueChange }: DropdownProps) => {
+const Dropdown = ({
+	items,
+	value,
+	onValueChange,
+	reversedIcon,
+	placeholder = 'Select ...'
+}: DropdownProps) => {
 	const [modalVisible, setModalVisible] = useState(false);
 
 	const openModal = () => {
@@ -36,10 +44,20 @@ const Dropdown = ({ items, value, onValueChange }: DropdownProps) => {
 		<>
 			<TouchableOpacity
 				onPress={openModal}
-				style={dropdownStyles.container}
+				style={[
+					dropdownStyles.container,
+					!reversedIcon && dropdownStyles.defaultContainer
+				]}
 			>
-				<ArrowDown />
-				<Text style={dropdownStyles.text}>{value?.label}</Text>
+				{!!reversedIcon && <ArrowDown />}
+				{!!value ? (
+					<Text style={dropdownStyles.text}>{value?.label}</Text>
+				) : (
+					<Text style={dropdownStyles.placeholder}>
+						{placeholder}
+					</Text>
+				)}
+				{!reversedIcon && <ArrowDown />}
 			</TouchableOpacity>
 			<Modal
 				onBackButtonPress={closeModal}
