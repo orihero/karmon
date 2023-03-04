@@ -11,7 +11,7 @@ export const defaultInputStyles = StyleSheet.create({
 		marginVertical: 8
 	},
 	input: {
-		...theme.textVariants.bodyBody3,
+		...theme.textVariants.bodyBody1,
 		color: theme.colors.baseDarkDark50,
 		paddingHorizontal: 8
 	}

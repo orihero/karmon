@@ -6,21 +6,19 @@ export const dropdownStyles = StyleSheet.create({
 		borderRadius: 40,
 		borderWidth: 1,
 		borderColor: theme.colors.baseLightLight60,
-		padding: 16,
 		paddingHorizontal: 16,
 		flexDirection: 'row',
 		alignItems: 'center',
-		justifyContent: 'space-between',
-		marginVertical: 8
+		justifyContent: 'space-between'
 	},
 	placeholder: {
 		color: theme.colors.baseLightLight20,
-		...theme.textVariants.bodyBody3,
+		...theme.textVariants.bodyBody1,
 		marginHorizontal: 8
 	},
 	text: {
 		marginHorizontal: 8,
-		...theme.textVariants.bodyBody3,
+		...theme.textVariants.bodyBody1,
 		color: theme.colors.baseDarkDark50
 	},
 	modalContainer: {

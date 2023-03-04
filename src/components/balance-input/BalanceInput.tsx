@@ -17,10 +17,6 @@ const BalanceInput = ({
 	decimalPoints = 1,
 	isCurrencyLeft = true
 }: BalanceInputProps) => {
-	const priceMask = /^\d+(,\d{1,2})?$/;
-
-	const [value, setValue] = useState('');
-
 	return (
 		<View style={balanceInputStyles.container}>
 			{isCurrencyLeft && (
@@ -37,6 +33,7 @@ const BalanceInput = ({
 				keyboardType="numbers-and-punctuation"
 				style={balanceInputStyles.input}
 				autoFocus
+				value={balance.toString()}
 			/>
 			{!isCurrencyLeft && <Text>{currency}</Text>}
 		</View>
